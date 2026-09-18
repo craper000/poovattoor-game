@@ -1,4 +1,4 @@
-const c=document.getElementById('game'),ctx=c.getContext('2d');let W,H,dpr,img=new Image(),loaded=false;img.src='assets/master-map.png';img.onload=()=>{loaded=true};
+const c=document.getElementById('game'),ctx=c.getContext('2d');let W,H,dpr,img=new Image(),loaded=false;img.src=new URL('master-map.png', document.baseURI).href;img.onload=()=>{loaded=true};img.onerror=()=>{loaded=false;toast('Map image not found: master-map.png')};
 function resize(){dpr=Math.min(devicePixelRatio||1,2);W=innerWidth;H=innerHeight;c.width=W*dpr;c.height=H*dpr;c.style.width=W+'px';c.style.height=H+'px';ctx.setTransform(dpr,0,0,dpr,0,0)}addEventListener('resize',resize);resize();
 let me={x:.50,y:.58,dir:0},remote=new Map(),keys={},day=12;addEventListener('keydown',e=>keys[e.key.toLowerCase()]=1);addEventListener('keyup',e=>keys[e.key.toLowerCase()]=0);
 const joy={x:0,y:0,active:false};const base=document.getElementById('joy'),stick=document.getElementById('stick');
