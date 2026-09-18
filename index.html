@@ -1,1 +1,18 @@
-<!doctype html><html><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no,viewport-fit=cover"><title>POOVATTOOR</title><link rel="stylesheet" href="style.css"></head><body><canvas id="game"></canvas><div class="hud"><div class="title">POOVATTOOR <small>ONLINE</small></div><div><span id="clock">12:00</span> · <span id="players">1/20</span></div><div id="place">Poovattoor</div></div><div class="hint">Drag / joystick to move · ACTION near locations</div><div id="joy"><div id="stick"></div></div><button id="action">ACTION</button><div id="toast"></div><script src="game.js"></script></body></html>
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no,viewport-fit=cover">
+<title>Poovattoor — 2D Game</title><link rel="stylesheet" href="style.css">
+</head><body>
+<canvas id="game"></canvas>
+<div id="hud">
+  <div class="player-card"><div class="avatar">🧑🏻</div><div><b>PLAYER</b><div class="lvl">Lv. 1</div><div class="xp"><span></span></div></div></div>
+  <div class="coins">🪙 <b id="coins">000</b> <button id="plus">+</button></div>
+  <div class="mission"><div class="pin">📍</div><div><strong id="location">Poovattoor Junction</strong><div id="objective">Explore the area</div><div class="checks"><span id="c1">□</span> Explore the area <span id="c2">□</span> Collect 5 coins <span id="c3">□</span> Talk to a player</div></div></div>
+</div>
+<div class="top-right"><div class="mini-wrap"><canvas id="mini" width="180" height="150"></canvas><div class="north">N</div></div><div class="legend"><span>🛒 Shop</span><span>🏥 Hospital</span><span>🏫 School</span><span>🚩 Ground</span><span>🔵 You</span><span>🟢 Player</span></div></div>
+<div id="toast"></div>
+<div class="bottom-ui"><button id="leftView">‹ Left Street View</button><button id="centerView">📍 Main Junction</button><button id="rightView">Right Street View ›</button></div>
+<div id="joystick"><div class="stick"></div></div><button id="action">ACTION</button><button id="run">🏃</button><button id="chat">💬</button>
+<script src="game.js"></script>
+</body></html>

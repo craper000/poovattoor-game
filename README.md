@@ -1,7 +1,10 @@
-# Poovattoor Web Game
+# Poovattoor 2D Final-Style Build
 
-GitHub Pages-ready static build.
+A mobile-first 2D top-down/isometric-style web game build inspired by the supplied Poovattoor junction reference.
 
-Upload **all files in this folder** to the root of a GitHub repository, then enable GitHub Pages from the `main` branch and `/ (root)`.
+- Uses the supplied master map as the minimap/reference layer.
+- Main gameplay is hand-drawn 2D game art: junction, Kerala-style shops, trees, lamps, NPCs, vehicles and player.
+- Touch joystick, action, run, chat and street-view focus buttons.
+- Static GitHub Pages compatible.
 
-Note: GitHub Pages can host the browser game, but the Node.js/WebSocket multiplayer server in the full project is not hosted by GitHub Pages.
+This is a playable 2D game build, not a final commercial production release. Online multiplayer requires a backend service; GitHub Pages alone cannot host the WebSocket server.
